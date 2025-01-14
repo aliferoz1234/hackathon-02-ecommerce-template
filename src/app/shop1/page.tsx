@@ -5,6 +5,7 @@ import { HiViewGrid } from "react-icons/hi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaRegCircle } from "react-icons/fa";
+import Header from "@/components/Header";
 
 const productData1 = [
   { id: 1, name: "CLOTH", description: "5 items", image: "/image-19.png" },
@@ -119,6 +120,7 @@ const productData4 = [
 const shop1 = () => {
   return (
     <div>
+      <Header/>
       <section>
         <div className="w-[414px] h-[202px] xs:w-[1440px] xs:h-[92px] pt-[24px] pb-[24px] bg-[#FAFAFA]">
           <div className="w-[414px] h-[154px] xs:w-[1049px] xs:h-[44px] gap-[30px] xs:ml-[195.5px] ml-[180px]  grid-cols-1 xs:flex xs:justify-around items-center mx-auto justify-items-center">

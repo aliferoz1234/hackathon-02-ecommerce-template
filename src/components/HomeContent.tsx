@@ -5,6 +5,7 @@ import { FaRegCircle } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
 import { FaChartArea } from "react-icons/fa";
 import { MdArrowForwardIos } from "react-icons/md";
+import Header from "./Header";
 
 const HomeContent = () => {
   const productData = [
@@ -76,6 +77,7 @@ const HomeContent = () => {
 
   return (
     <div>
+      <Header/>
       <section>
         <div
           className="w-[414px] h-[753px] xs:w-[1439px] xs:h-[716px] mt-[0px] ml-[1px] border-[1px] rounded-[5px] border-[#DEDEDE] bg-[#FFFFFF] bg-cover bg-center items-center"
@@ -110,7 +112,7 @@ const HomeContent = () => {
           <div className="w-[333px] h-[1850px] xs:w-[1050px] xs:h-[770px] xs:ml-[195px] mx-auto pt-[80px] pb-[80px] gap-[48px] grid grid-cols-1 justify-center items-center">
             <div className="w-[333px] h-[82px] xs:w-[607px] xs:h-[62px] gap-[10px]  grid grid-cols-1 justify-items-center xs:ml-[221.5px] mx-auto">
               <h3 className=" h-[32px] text-[24px] text-[#252B42] font-bold ">
-                EDITOR’S PICK
+                EDITOR&apos;S PICK
               </h3>
               <p className="w-[347px] h-[20px] text-[14px] text-[#737373] font-normal pl-[40px]">
                 Problems trying to resolve the conflict between{" "}

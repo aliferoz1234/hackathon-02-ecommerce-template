@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import { BsTelephone } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 import Link from "next/link";
@@ -15,6 +16,9 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Header = () => {
+  // const[open, setOpen]=useState (false);
+  const[showMenu, setShowMenu]=useState (false);
+
   return (
     <header>
       <nav className="bg-[#252B42] w-[1439px] h-[58px] grid-cols-4 text-[14px] text-[#FFFFFF] weight-[700] font-bold items-center hidden xs:flex justify-around">
@@ -62,25 +66,34 @@ const Header = () => {
         </div>
         <div className="w-[1155px] h-[58px] ml-[145px] xs:ml-[265px] xs:flex justify-start align-middle grid grid-cols-1 ">
           <div className="w-[123px] h-[400px] xs:w-[361px] xs:h-[25px] xs:gap-[15px]  mt-[16.5px] text-[#737373] xs:text-[14px] text-[30px]  font-bold  grid grid-cols-1 xs:flex">
-            <div className="w-[43px] h-[24px] weight-700">
+            <div className="w-[43px] h-[24px] font-bold">
               <Link href="/">Home</Link>
             </div>
-            <div className="w-[63px] h-[24px] gap-[10px] flex">
-              <div className="w-[38px] h-[28px] weight-500">
+            <div className="relative cursor-pointer" onClick={()=>setShowMenu(!showMenu)}>
+            <div className="w-[63px] h-[24px]  flex">
+              <div className="w-[38px] h-[28px] font-medium">
                 <Link href="/shop1">Shop</Link>
               </div>
               <RiArrowDropDownLine size={30} className="text-[#252B42]" />
             </div>
-            <div className="w-[45px] h-[24px] weight-700">
+            
+            {showMenu && (
+              <div className="absolute w-[46px] h-[60px] font-medium bg-zinc-150 grid grid-cols-1 text-center">
+              <Link href="/shop1" className="hover:text-black">Shop1</Link>
+              <Link href="/shop2" className="hover:text-black">Shop2</Link>
+              </div>
+            )}
+            </div>
+            <div className="w-[45px] h-[24px] font-bold">
               <Link href="/about">About</Link>
             </div>
-            <div className="w-[33px] h-[24px] weight-700">
+            <div className="w-[33px] h-[24px] font-bold">
               <Link href="/blog">Blog</Link>
             </div>
-            <div className="w-[58px] h-[24px] weight-700">
+            <div className="w-[58px] h-[24px] font-bold">
               <Link href="/contact">Contact</Link>
             </div>
-            <div className="w-[44px] h-[24px] weight-700">
+            <div className="w-[44px] h-[24px] font-bold">
               <Link href="/pages">Pages</Link>
             </div>
           </div>

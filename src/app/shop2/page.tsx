@@ -9,6 +9,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import { BsCart } from "react-icons/bs";
 import { BsEyeFill } from "react-icons/bs";
 import { SlArrowRight } from "react-icons/sl";
+import Header from "@/components/Header";
 
 
 const productData1 = [
@@ -83,6 +84,7 @@ const productData2 = [
 const shop2 = () => {
   return (
     <div>
+      <Header/>
       <section>
         <div className=" w-[414px] h-[92px] xs:w-[1440px] xs:h-[92px] pt-[24px] pb-[24px] bg-[#FAFAFA]">
           <div className="w-[414px] h-[44px] xs:w-[1033px] xs:h-[44px] gap-[30px] xs:ml-[203.5px] ">

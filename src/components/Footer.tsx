@@ -166,9 +166,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1440px] h-[74px] bg-[#FAFAFA]">
-          <div className="w-[1050px] h-[74px] ml-[195px] pt-[25px] pb-[25px]">
-            <h6 className="w-[336] h-[24px] text-[14px] text-[#737373] font-bold">
+        <div className="w-[414px] h-[98px] xs:w-[1440px] xs:h-[74px] bg-[#FAFAFA] ">
+          <div className="w-[413px] h-[48px] xs:w-[1050px] xs:h-[74px] xs:ml-[195px] xs:pt-[25px] xs:pb-[25px] justify-items-center text-center">
+            <h6 className="w-[193px] h-[48px] xs:w-[336] xs:h-[24px] text-[14px] text-[#737373] font-bold">
               Made With Love By Finland All Right Reserved{" "}
             </h6>
           </div>
